@@ -36,6 +36,8 @@ brew 'xz'
 brew 'zsh'
 
 cask 'adium'
+cask 'archiver'
+cask 'dropbox'
 cask 'firefox'
 cask 'garmin-express'
 cask 'google-chrome'
