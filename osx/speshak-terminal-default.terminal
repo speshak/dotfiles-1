@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BackgroundColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECQw
+	LjA3ODQzMTM3NSAwLjA3ODQzMTM3NSAwLjA3ODQzMTM3NQAQAoAC0hAREhNaJGNsYXNz
+	bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy
+	0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KJi42SnaausbrMz9QAAAAAAAABAQAAAAAAAAAZ
+	AAAAAAAAAAAAAAAAAAAA1g==
+	</data>
+	<key>Bell</key>
+	<true/>
+	<key>Font</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
+	YXNzI0AkAAAAAAAAEBCAAoADVk1vbmFjb9ITFBUWWiRjbGFzc25hbWVYJGNsYXNzZXNW
+	TlNGb250ohUXWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RobVHJvb3SAAQgRGiMt
+	Mjc8QktSW2JpcnR2eH+Ej5ifoqu9wMUAAAAAAAABAQAAAAAAAAAcAAAAAAAAAAAAAAAA
+	AAAAxw==
+	</data>
+	<key>FontAntialias</key>
+	<false/>
+	<key>FontWidthSpacing</key>
+	<real>1.004032258064516</real>
+	<key>Linewrap</key>
+	<true/>
+	<key>ProfileCurrentVersion</key>
+	<real>2.04</real>
+	<key>TextBoldColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPEB8w
+	Ljk2MDc4NDM4IDAuODcwNTg4MyAwLjcwMTk2MDgAEAKAAtIQERITWiRjbGFzc25hbWVY
+	JGNsYXNzZXNXTlNDb2xvcqISFFhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEXGFRy
+	b290gAEIERojLTI3O0FITltihIaIjZihqay1x8rPAAAAAAAAAQEAAAAAAAAAGQAAAAAA
+	AAAAAAAAAAAAANE=
+	</data>
+	<key>TextColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECAw
+	Ljg3MDU4ODMgMC43MjE1Njg2NCAwLjUyOTQxMTc5ABACgALSEBESE1okY2xhc3NuYW1l
+	WCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRFxhU
+	cm9vdIABCBEaIy0yNztBSE5bYoWHiY6ZoqqttsjL0AAAAAAAAAEBAAAAAAAAABkAAAAA
+	AAAAAAAAAAAAAADS
+	</data>
+	<key>VisualBell</key>
+	<true/>
+	<key>VisualBellOnlyWhenMuted</key>
+	<false/>
+	<key>WindowTitle</key>
+	<string></string>
+	<key>columnCount</key>
+	<integer>80</integer>
+	<key>name</key>
+	<string>Basic</string>
+	<key>rowCount</key>
+	<integer>24</integer>
+	<key>shellExitAction</key>
+	<integer>1</integer>
+	<key>type</key>
+	<string>Window Settings</string>
+</dict>
+</plist>
