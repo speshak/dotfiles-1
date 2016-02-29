@@ -51,16 +51,10 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git ruby brew git-flow osx screen aws docker httpie safe-paste)
 
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH="$PATH:/usr/local/git/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-
-export EDITOR='vim'
+# See ~/.dotfiles/system
 
 # ssh
 zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa2 id_github
