@@ -8,3 +8,9 @@ alias weather="curl wttr.in"
 
 alias -s rb=vim
 alias -s md=vim
+
+
+clip ()
+{
+  cat $1 | pbcopy
+}
