@@ -5,6 +5,7 @@ tap 'homebrew/bundle'
 
 brew 'ccat'
 brew 'cowsay'
+brew 'diff-so-fancy'
 brew 'gcal'
 brew 'git'
 brew 'git-flow'
