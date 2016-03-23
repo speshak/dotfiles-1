@@ -99,4 +99,6 @@ do
   source $file
 done
 
+export PATH=${PATH}:$DOTFILES/bin
+
 unset config_files
