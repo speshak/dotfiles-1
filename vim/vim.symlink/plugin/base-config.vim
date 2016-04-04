@@ -48,6 +48,9 @@ endif
 
 map <F7> :StripWhitespace<CR>
 
+" Make Ctl-L reset syntax highlighting
+nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
+
 " Indent guides
 let g:indent_guides_start_level = 2
 
