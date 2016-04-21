@@ -229,6 +229,28 @@ function! Toggle() "{{{
         elseif (s:wordUnderCursor ==? "undef")
             let s:wordUnderCursor_tmp = "define"
             let s:toggleDone = 1
+
+        " Special handling for git rebase magic words
+        elseif ( &filetype == "gitrebase")
+          if (s:wordUnderCursor ==? "pick")
+              let s:wordUnderCursor_tmp = "reword"
+              let s:toggleDone = 1
+          elseif (s:wordUnderCursor ==? "reword")
+              let s:wordUnderCursor_tmp = "edit"
+              let s:toggleDone = 1
+          elseif (s:wordUnderCursor ==? "edit")
+              let s:wordUnderCursor_tmp = "squash"
+              let s:toggleDone = 1
+          elseif (s:wordUnderCursor ==? "squash")
+              let s:wordUnderCursor_tmp = "fixup"
+              let s:toggleDone = 1
+          elseif (s:wordUnderCursor ==? "fixup")
+              let s:wordUnderCursor_tmp = "drop"
+              let s:toggleDone = 1
+          elseif (s:wordUnderCursor ==? "drop")
+              let s:wordUnderCursor_tmp = "pick"
+              let s:toggleDone = 1
+          endif
         endif
 
          " preserve case (provided by Jan Christoph Ebersbach)
