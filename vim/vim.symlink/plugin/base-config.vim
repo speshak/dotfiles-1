@@ -30,10 +30,6 @@ let g:explDetailedList=1
 
 " Taglist stuff
 filetype on
-let Tlist_Ctags_Cmd="/sw/bin/ctags"
-let Tlist_Show_One_File=0
-let Tlist_Auto_Open=0
-let Tlist_Exit_OnlyWindow=1
 
 set printoptions=paper:Letter
 
