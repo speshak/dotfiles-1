@@ -102,3 +102,8 @@ done
 export PATH=${PATH}:$DOTFILES/bin
 
 unset config_files
+
+if [ -e /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh ]
+then
+  source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+fi

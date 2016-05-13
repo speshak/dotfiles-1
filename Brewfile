@@ -35,6 +35,7 @@ brew 'wget'
 brew 'youtube-dl'
 brew 'xz'
 brew 'zsh'
+brew 'zsh-navigation-tools'
 
 cask 'adium'
 cask 'archiver'
