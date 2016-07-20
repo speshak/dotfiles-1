@@ -1,2 +1,2 @@
 
-export ANSIBLE_COW_SELECTION=head-in
+export ANSIBLE_NOCOWS=1
