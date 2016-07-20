@@ -3,7 +3,7 @@
 [hub]
   protocol = https
 [user]
-  name = speshak
+	name = Scott Peshak
   email = speshak@gmail.com
 [credential]
   helper = osxkeychain
