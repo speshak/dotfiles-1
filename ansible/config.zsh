@@ -1,2 +1,2 @@
-
 export ANSIBLE_NOCOWS=1
+export ANSIBLE_VAULT_PASSWORD_FILE=${HOME}/bin/lp-vault
