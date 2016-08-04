@@ -15,9 +15,3 @@ clip ()
   cat $1 | pbcopy
 }
 
-
-# Make dig deal with Chrome/Firefox silently adding protocol to the front of a copied domain
-dig ()
-{
-  /usr/bin/dig $(echo $1 | sed -e 's/^http:\/\///' | sed -e 's/\///')
-}
