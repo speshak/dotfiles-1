@@ -5,3 +5,8 @@ ansible19-playbook ()
   ansible-playbook $@
   deactivate
 }
+
+find_vaults ()
+{
+  \grep -lr ANSIBLE_VAULT *
+}
