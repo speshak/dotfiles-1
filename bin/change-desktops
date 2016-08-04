@@ -1,0 +1,13 @@
+#!/bin/bash
+#script to change all desktop backgrounds
+
+IMG_PATH="$1"
+
+if [ -z "$IMG_PATH" ]; then
+  echo "Missing image filename"
+  exit 1
+fi
+
+IMG_PATH=$(readlink -f $IMG_PATH)
+
+defaults write com.apple.desktop Background “{default = {ImageFilePath=’$IMG_PATH’; };}”; killall Dock

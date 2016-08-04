@@ -1,0 +1,22 @@
+#!/bin/sh
+function get_secret_name()
+{
+  #TODO: make this a little more idiot proof
+  SECRET_FILE=`git rev-parse --show-toplevel`/lastpass_vault_secret
+  cat ${SECRET_FILE}
+}
+
+function assert_lpass_session()
+{
+  lpass status --quiet
+
+  if [ $? -ne 0 ]; then
+    lpass login ${LPASS_USER} &> /dev/null
+  fi
+}
+
+
+assert_lpass_session
+
+SECRET=`get_secret_name`
+lpass show --field="Vault Password" "${SECRET}"

@@ -1,0 +1,3 @@
+#!/bin/sh
+security find-generic-password -a ${LPASS_USER} -s lpass -g 2>&1\
+  | awk '/^password:/ { gsub(/^"|"$/, "", $2); print $2 }'
