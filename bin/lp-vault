@@ -3,7 +3,7 @@ function get_secret_name()
 {
   #TODO: make this a little more idiot proof
   SECRET_FILE=`git rev-parse --show-toplevel`/lastpass_vault_secret
-  cat ${SECRET_FILE}
+  grep "id:" ${SECRET_FILE} | sed -e 's/id://'
 }
 
 function assert_lpass_session()
@@ -19,4 +19,4 @@ function assert_lpass_session()
 assert_lpass_session
 
 SECRET=`get_secret_name`
-lpass show --field="Vault Password" "${SECRET}"
+lpass show --field="Vault Password" ${SECRET}
