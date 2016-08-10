@@ -36,13 +36,22 @@ brew 'xz'
 brew 'zsh'
 brew 'zsh-navigation-tools'
 
-cask 'adium'
+cask 'aerial'
 cask 'archiver'
 cask 'dropbox'
 cask 'firefox'
-cask 'garmin-express'
 cask 'google-chrome'
 cask 'slack'
-cask 'transmission'
 cask 'tunnelbear'
 cask 'vlc'
+cask 'lastpass'
+cask 'iterm2'
+
+# For business
+
+# For pleasure
+cask 'transmission'
+cask 'garmin-express'
+cask 'adium'
+cask 'adobe-creative-cloud'
+cask 'brewtarget'
