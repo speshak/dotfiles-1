@@ -1,7 +1,7 @@
 snippet distro "include distro yaml"
 - include: ubuntu.yml
-  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+  when: ansible_os_family == 'Debian'
 
 - include: rhel.yml
-  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+  when: ansible_os_family  == 'RedHat'
 endsnippet
