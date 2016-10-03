@@ -233,18 +233,18 @@ function! Toggle() "{{{
         " Special handling for git rebase magic words
         elseif ( &filetype == "gitrebase")
           if (s:wordUnderCursor ==? "pick")
-              let s:wordUnderCursor_tmp = "reword"
+              let s:wordUnderCursor_tmp = "fixup"
               let s:toggleDone = 1
-          elseif (s:wordUnderCursor ==? "reword")
+          elseif (s:wordUnderCursor ==? "fixup")
               let s:wordUnderCursor_tmp = "edit"
               let s:toggleDone = 1
           elseif (s:wordUnderCursor ==? "edit")
               let s:wordUnderCursor_tmp = "squash"
               let s:toggleDone = 1
           elseif (s:wordUnderCursor ==? "squash")
-              let s:wordUnderCursor_tmp = "fixup"
+              let s:wordUnderCursor_tmp = "reword"
               let s:toggleDone = 1
-          elseif (s:wordUnderCursor ==? "fixup")
+          elseif (s:wordUnderCursor ==? "reword")
               let s:wordUnderCursor_tmp = "drop"
               let s:toggleDone = 1
           elseif (s:wordUnderCursor ==? "drop")
