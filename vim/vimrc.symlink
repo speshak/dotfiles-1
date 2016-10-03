@@ -38,7 +38,6 @@ Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
-Plugin 'Yggdroot/indentLine'
 
 " Dev Ops stuff
 Plugin 'rodjek/vim-puppet'
