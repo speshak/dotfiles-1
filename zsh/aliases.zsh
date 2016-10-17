@@ -9,6 +9,8 @@ alias weather="curl wttr.in"
 alias -s rb=vim
 alias -s md=vim
 
+alias crontab="VIM_CRONTAB=true crontab"
+
 
 clip ()
 {

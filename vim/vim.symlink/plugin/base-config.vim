@@ -49,6 +49,8 @@ nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 
 " Indent guides
 let g:indent_guides_start_level = 2
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
 
 " Don't lose selection when shifting
 xnoremap <  <gv
@@ -66,4 +68,10 @@ nnoremap <F5> :UndotreeToggle<CR>
 if has("persistent_undo")
     set undodir=~/.undodir/
     set undofile
+endif
+
+" Set backup options if we're editing a crontab
+if $VIM_CRONTAB == "true"
+    set nobackup
+    set nowritebackup
 endif
