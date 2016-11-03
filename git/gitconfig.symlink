@@ -15,6 +15,11 @@
   count   = !git shortlog -sn
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	up = pull --rebase --autostash
+  please = push --force-with-lease
+
+[diff "spaceman-diff"]
+  command = /usr/local/bin/spaceman-diff
+
 [color]
   diff = auto
   status = auto
@@ -23,8 +28,6 @@
 [core]
   excludesfile = ~/.gitignore
   editor = vim
-[apply]
-  whitespace = nowarn
 [mergetool]
   keepBackup = false
 [difftool]
