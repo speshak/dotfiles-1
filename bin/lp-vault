@@ -1,22 +1,50 @@
 #!/bin/sh
+
+###
+# Get the name of the LastPass secret
+# Checks for a lastpass_vault_secret file at the root of the current git repo
+###
 function get_secret_name()
 {
-  #TODO: make this a little more idiot proof
   SECRET_FILE=`git rev-parse --show-toplevel`/lastpass_vault_secret
-  grep "id:" ${SECRET_FILE} | sed -e 's/id://'
+
+  if [ -e "${SECRET_FILE}" ]; then
+    grep "id:" ${SECRET_FILE} | sed -e 's/id: //'
+  else
+    echo "WARNING: Can't find lastpass_vault_secret file.  Expected it at ${SECRET_FILE}" 1>&2
+    exit 1
+  fi
 }
 
+
+###
+# Check that a LastPass session is active
+###
 function assert_lpass_session()
 {
-  lpass status --quiet
+  # <lastpass-cli-0.8.1, and even release 0.9.0 does not have the 'status'
+  # subcommand. For now, use 'sync' to ensure there's a logged in session.
+  lpass sync
 
   if [ $? -ne 0 ]; then
-    lpass login ${LPASS_USER} &> /dev/null
+    if [ -z "${LPASS_USER}" ]; then
+      echo "ERROR: No lpass session found.  Please run lpass login, or set LPASS_USER" 1>&2
+      exit 1
+    else
+      lpass login ${LPASS_USER} &> /dev/null
+    fi
   fi
 }
 
 
 assert_lpass_session
+if [ $? -eq 1 ]; then
+  exit 1
+fi
 
 SECRET=`get_secret_name`
+if [ $? -eq 1 ]; then
+  exit 0
+fi
+
 lpass show --field="Vault Password" ${SECRET}
