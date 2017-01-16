@@ -16,6 +16,8 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	up = pull --rebase --autostash
   please = push --force-with-lease
+  squash = commit --squash=HEAD
+  fixup = commit --fixup=HEAD
 
 [diff "spaceman-diff"]
   command = /usr/local/bin/spaceman-diff
@@ -47,3 +49,7 @@
 	check = true
 [status]
 	submoduleSummary = true
+[fetch]
+	prune = true
+[rebase]
+  autoSquash = true
