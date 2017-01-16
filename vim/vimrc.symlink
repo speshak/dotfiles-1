@@ -22,9 +22,11 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'mbbill/undotree'
 
-Plugin 'pgilad/vim-skeletons'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+if has('python')
+  Plugin 'pgilad/vim-skeletons'
+  Plugin 'SirVer/ultisnips'
+  Plugin 'honza/vim-snippets'
+endif
 
 " Ruby Plugins
 Plugin 'vim-ruby/vim-ruby'
