@@ -35,10 +35,10 @@ set printoptions=paper:Letter
 
 " Spelling (didn't exist before vim 7.0)
 if version >= 700
-	set spelllang=en
-	setlocal spellfile=~/.vim-spellfile.en.add
-	map sp <Esc>:set spell<CR>
-	map nsp <Esc>:set nospell<CR>
+  set spelllang=en
+  setlocal spellfile=~/.vim-spellfile.en.add
+  map sp <Esc>:set spell<CR>
+  map nsp <Esc>:set nospell<CR>
 endif
 
 
