@@ -21,6 +21,7 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'mbbill/undotree'
+Plugin 'chrisbra/csv.vim'
 
 if has('python')
   Plugin 'pgilad/vim-skeletons'
