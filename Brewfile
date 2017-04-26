@@ -13,6 +13,7 @@ brew 'grc'
 brew 'htop'
 brew 'httpie'
 brew 'imagemagick'
+brew 'ipcalc'
 brew 'jp2a'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
