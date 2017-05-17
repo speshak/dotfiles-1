@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 
 brew 'ccat'
+brew 'certigo'
 brew 'cowsay'
 brew 'diff-so-fancy'
 brew 'gcal'
