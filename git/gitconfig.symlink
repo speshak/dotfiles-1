@@ -21,7 +21,17 @@
 
 [diff "spaceman-diff"]
   command = /usr/local/bin/spaceman-diff
+  indentHeuristic = on
 
+# Ansible Vault tools
+[diff "ansible-vault"]
+  textconv = ansible-vault view
+  # Do not cache the vault contents
+  cachetextconv = false
+
+[merge "ansible-vault"]
+  name = ansible-vault merge driver
+  driver = ~/bin/ansible-vault-merge -- %O %A %B %P
 [color]
   diff = auto
   status = auto
@@ -34,14 +44,12 @@
   keepBackup = false
 [difftool]
   prompt = false
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [help]
   autocorrect = 1
-[push]
-  # See `git help config` (search for push.default)
-  # for more information on different options of the below setting.
-  #
-  # Setting to git 2.0 default to suppress warning message
-  default = simple
 [pager]
   diff = diff-so-fancy | less --tabs=4 -RFX
   show = diff-so-fancy | less --tabs=4 -RFX
