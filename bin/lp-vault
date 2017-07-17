@@ -24,7 +24,7 @@ function assert_lpass_session()
 {
   # <lastpass-cli-0.8.1, and even release 0.9.0 does not have the 'status'
   # subcommand. For now, use 'sync' to ensure there's a logged in session.
-  lpass sync
+  lpass status
 
   if [ $? -ne 0 ]; then
     if [ -z "${LPASS_USER}" ]; then
