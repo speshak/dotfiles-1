@@ -1,2 +1,2 @@
 
-export LPASS_ASKPASS=${DOTFILES}/bin/lpass-askpass
+export LPASS_ASKPASS=${DOTFILES}/mdp.helpers/upstream/bin/lpass-askpass

@@ -1,0 +1,3 @@
+[submodule "mdp.helpers/upstream"]
+	path = mdp.helpers/upstream
+	url = ssh://git@stash.meredith.com:7999/do/mdp.sh.helpers.git
