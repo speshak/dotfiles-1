@@ -46,6 +46,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'rodjek/vim-puppet'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'vim-scripts/splunk.vim'
+Plugin 'digitalrounin/vim-yaml-folds'
 
 call vundle#end()
 filetype plugin indent on
