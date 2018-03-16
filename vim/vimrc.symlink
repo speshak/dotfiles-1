@@ -22,6 +22,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'mbbill/undotree'
 Plugin 'chrisbra/csv.vim'
+Plugin 'machakann/vim-highlightedyank'
 
 if has('python')
   Plugin 'pgilad/vim-skeletons'
