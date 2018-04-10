@@ -25,7 +25,7 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'airblade/vim-gitgutter'
 
-if has('python')
+if has('python') || has('python3')
   Plugin 'pgilad/vim-skeletons'
   Plugin 'SirVer/ultisnips'
   Plugin 'honza/vim-snippets'
