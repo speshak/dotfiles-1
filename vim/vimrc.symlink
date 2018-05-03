@@ -50,6 +50,8 @@ Plugin 'pearofducks/ansible-vim'
 Plugin 'vim-scripts/splunk.vim'
 Plugin 'digitalrounin/vim-yaml-folds'
 
+Plugin 'jparise/vim-graphql'
+
 call vundle#end()
 filetype plugin indent on
 " End Vundle
