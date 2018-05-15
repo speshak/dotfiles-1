@@ -91,7 +91,7 @@ done
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
-compinit
+compinit -D
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -99,7 +99,7 @@ do
   source $file
 done
 
-export PATH=${PATH}:$DOTFILES/bin
+export PATH=${DOTFILES}/bin:${PATH}
 
 unset config_files
 
