@@ -11,6 +11,8 @@ alias -s md=vim
 
 alias crontab="VIM_CRONTAB=true crontab"
 
+# For macos
+alias md5sum="md5 -r"
 
 clip ()
 {
