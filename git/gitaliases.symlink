@@ -9,7 +9,7 @@
   please = push --force-with-lease
   squash = commit --squash=HEAD
   fixup = commit --fixup=HEAD
-	stsh = stash --keep-index
-	staash = stash --include-untracked
-	staaash = stash --all
-
+  stsh = stash --keep-index
+  staash = stash --include-untracked
+  staaash = stash --all
+  ane = commit --amend --no-edit
