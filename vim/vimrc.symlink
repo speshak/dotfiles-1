@@ -49,6 +49,8 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'vim-scripts/splunk.vim'
 Plugin 'digitalrounin/vim-yaml-folds'
+Plugin 'hashivim/vim-terraform'
+Plugin 'juliosueiras/vim-terraform-completion'
 
 Plugin 'jparise/vim-graphql'
 
