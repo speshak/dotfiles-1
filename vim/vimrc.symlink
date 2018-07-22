@@ -24,6 +24,7 @@ Plugin 'mbbill/undotree'
 Plugin 'chrisbra/csv.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-commentary'
 
 if has('python') || has('python3')
   Plugin 'pgilad/vim-skeletons'
@@ -53,6 +54,9 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'juliosueiras/vim-terraform-completion'
 
 Plugin 'jparise/vim-graphql'
+Plugin 'ynkdir/vim-vimlparser'
+
+Plugin 'syngan/vim-vimlint'
 
 call vundle#end()
 filetype plugin indent on
