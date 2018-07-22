@@ -52,6 +52,7 @@ Plugin 'vim-scripts/splunk.vim'
 Plugin 'digitalrounin/vim-yaml-folds'
 Plugin 'hashivim/vim-terraform'
 Plugin 'juliosueiras/vim-terraform-completion'
+Plugin 'speshak/vim-cfn'
 
 Plugin 'jparise/vim-graphql'
 Plugin 'ynkdir/vim-vimlparser'
