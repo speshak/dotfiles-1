@@ -14,7 +14,7 @@ set statusline=%f(%l:%c)%y%m
 set completeopt=menu
 
 
-let xml_use_xhtml = 1
+let g:xml_use_xhtml = 1
 let g:explDetailedList=1
 
 " Taglist stuff
