@@ -46,7 +46,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 
 " Dev Ops stuff
-Plugin 'rodjek/vim-puppet'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'vim-scripts/splunk.vim'
 Plugin 'digitalrounin/vim-yaml-folds'
