@@ -22,6 +22,11 @@ filetype on
 
 set printoptions=paper:Letter
 
+" Color scheme
+colorscheme codedark
+let g:airline_theme = 'codedark'
+
+
 " Spelling (didn't exist before vim 7.0)
 if version >= 700
   set spelllang=en
