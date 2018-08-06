@@ -25,7 +25,6 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
-Plugin 'tomasiser/vim-code-dark'
 
 if has('python') || has('python3')
   Plugin 'pgilad/vim-skeletons'
