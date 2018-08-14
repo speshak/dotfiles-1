@@ -22,8 +22,6 @@ filetype on
 
 set printoptions=paper:Letter
 
-colorscheme solarized
-
 " Spelling (didn't exist before vim 7.0)
 if version >= 700
   set spelllang=en
