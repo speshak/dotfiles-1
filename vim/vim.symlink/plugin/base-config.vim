@@ -4,6 +4,8 @@ set ignorecase nohlsearch number showcmd
 syntax on
 
 set sessionoptions-=options
+set encoding=utf-8
+set termencoding=utf-8
 
 " Tab related
 set tabstop=2 shiftwidth=2 expandtab
@@ -57,3 +59,8 @@ if $VIM_CRONTAB == "true"
     set nobackup
     set nowritebackup
 endif
+
+" Font configuration
+let g:airline_powerline_fonts = 1
+"set guifont=DroidSansMono_Nerd_Font_Mono:h11
+set guifont=Sauce_Code_Pro_ExtraLight_Nerd_Font_Complete:h12

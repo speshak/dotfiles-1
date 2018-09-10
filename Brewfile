@@ -53,6 +53,7 @@ cask 'tunnelbear'
 cask 'vlc'
 cask 'lastpass'
 cask 'iterm2'
+cask 'font-sourcecodepro-nerd-font'
 
 # For business
 
