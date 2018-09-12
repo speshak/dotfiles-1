@@ -10,4 +10,4 @@ Conditions:
 Resources:
 
 
-# vim:ft=yaml
+# vim:ft=yaml.cloudformation
