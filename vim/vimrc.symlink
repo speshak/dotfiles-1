@@ -21,6 +21,7 @@ Plugin 'mbbill/undotree'
 Plugin 'chrisbra/csv.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-speeddating'
 
 " User Interface
 Plugin 'scrooloose/nerdtree'
