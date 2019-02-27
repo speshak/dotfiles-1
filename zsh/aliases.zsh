@@ -19,3 +19,17 @@ clip ()
   cat $1 | pbcopy
 }
 
+function do_git {
+  cmd=$1
+  shift
+
+  "`whence -p git`" "$cmd" "$@"
+
+  if [ "$cmd" '==' "clone" ]; then
+    git-autoprecommit "$@"
+  fi
+}
+
+if whence -p git-autoprecommit > /dev/null; then
+  alias git='do_git'
+fi
